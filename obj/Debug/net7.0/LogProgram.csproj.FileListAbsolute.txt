@@ -1,0 +1,15 @@
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\bin\Debug\net7.0\LogProgram.exe
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\bin\Debug\net7.0\LogProgram.deps.json
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\bin\Debug\net7.0\LogProgram.runtimeconfig.json
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\bin\Debug\net7.0\LogProgram.dll
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\bin\Debug\net7.0\LogProgram.pdb
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.csproj.AssemblyReference.cache
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.AssemblyInfoInputs.cache
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.AssemblyInfo.cs
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.csproj.CoreCompileInputs.cache
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.dll
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\refint\LogProgram.dll
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.pdb
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\LogProgram.genruntimeconfig.cache
+C:\Users\willi\OneDrive\Área de Trabalho\LogProgram\obj\Debug\net7.0\ref\LogProgram.dll
