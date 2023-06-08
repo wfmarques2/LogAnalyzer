@@ -8,7 +8,7 @@ public class Program
     {
         // Define o caminho do arquivo de log
         Console.WriteLine("Digite o caminho do arquivo de log: ");
-        string? path = Console.ReadLine();
+        string path = Console.ReadLine() ?? "";
 
         if (!string.IsNullOrEmpty(path) && File.Exists(path))
         {
@@ -27,11 +27,24 @@ public class Program
             {
                 // Divide a linha em data/hora e mensagem
                 string[] parts = line.Split(' ');
+
+                // Verifica se a linha possui a quantidade de partes correta
+                if (parts.Length < 3)
+                {
+                    Console.WriteLine("Arquivo com formatação inválida!");
+                    return;
+                }
+
                 string dateAndTimeString = parts[0] + " " + parts[1];
                 string message = parts[2];
 
                 // Converte a data/hora para o formato adequado
-                DateTime dateTime = DateTime.ParseExact(dateAndTimeString, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+                DateTime dateTime;
+                if (!DateTime.TryParseExact(dateAndTimeString, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime))
+                {
+                    Console.WriteLine("Arquivo com formatação inválida!");
+                    return;
+                }
 
                 // Verifica se a linha contém um erro
                 if (message.Contains("ERRO"))
@@ -64,7 +77,7 @@ public class Program
             // Exibe os resultados
             Console.WriteLine("Número total de entradas de log: {0}", totalEntries);
             Console.WriteLine("Número total de erros: {0}", totalErrors);
-            Console.WriteLine("Tempo total decorrido: {0} hora(s), {1} minuto(s) e {2} Segundo(s)",
+            Console.WriteLine("Tempo total decorrido: {0} hora(s), {1} minuto(s) e {2} segundo(s)",
                 hours, minutes, seconds);
 
             reader.Close();
